@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #d1ac8f;
+}
+
+.addBtnModal {
+    font-size: large;
+    color: #825626;
+    font-weight: 800;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+dialog {
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fffef7; /* Light yellowish background to resemble book pages */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    max-width: 800px;
+    overflow-x: hidden;
+}
+
+dialog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 20px;
+    background: #d1ac8f; /* Brownish color for the spine of the book */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -3px 0 5px rgba(0,0,0,0.2);
+}
+
+dialog::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    width: 20px;
+    background: #d1ac8f; /* Brownish color for the other side of the spine */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.2);
+}
+
+.form-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+.form-btn button {
+    background-color: burlywood;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.form-btn button:hover {
+    background-color: #e0a96d;
+}
+
+input {
+    padding: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fffef7;
+}
+
+thead tr {
+    background-color: #d1ac8f;
+    color: #ffffff;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #d1ac8f;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #d1ac8f;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b58c6f;
+}
